@@ -1,38 +1,43 @@
-//gør muligt at tilføje section
-let mainSection = document.querySelector("section");
+document.addEventListener("DOMContentLoaded", start);
 
-//ny article til section
-let newArticle = document.createElement("article");
+function start() {
+  console.log("Siden er loaded");
+  //gør muligt at tilføje section
+  let mainSection = document.querySelector("section");
 
-//tilføjer article til section
-mainSection.appendChild(newArticle);
+  //ny article til section
+  let newArticle = document.createElement("article");
 
-//Laver nyt billede element
-let billede2 = document.createElement("img");
-billede2.src = "golf.png";
-billede2.alt = "en person spiller golf";
-newArticle.appendChild(billede2);
+  //tilføjer article til section
+  mainSection.appendChild(newArticle);
 
-//laver ny overskrift tag
-let titel = document.createElement("h3");
+  //Laver nyt billede element
+  let billede2 = document.createElement("img");
+  billede2.src = "golf.png";
+  billede2.alt = "en person spiller golf";
+  newArticle.appendChild(billede2);
 
-//laver tekst til ny overskrift
-let overskrifttekst = document.createTextNode("Article 3");
+  //laver ny overskrift tag
+  let titel = document.createElement("h3");
 
-//Tilføjer overskriftens tekst til overskrift
-titel.appendChild(overskrifttekst);
+  //laver tekst til ny overskrift
+  let overskrifttekst = document.createTextNode("Article 3");
 
-//tilføjer titlen/overskriften til artiklen
-newArticle.appendChild(titel);
+  //Tilføjer overskriftens tekst til overskrift
+  titel.appendChild(overskrifttekst);
 
-//Laver text element
-let text2 = document.createElement("p");
+  //tilføjer titlen/overskriften til artiklen
+  newArticle.appendChild(titel);
 
-//Laver text indholdet
-let text2indhold = document.createTextNode("Hej med dig det her er øvelse 4");
+  //Laver text element
+  let text2 = document.createElement("p");
 
-//Tilføjer text indholdet til text tagget (appendChild, gør at man tilføjer et barn til det man skriver før).
-text2.appendChild(text2indhold);
+  //Laver text indholdet
+  let text2indhold = document.createTextNode("Hej med dig det her er øvelse 4");
 
-//tilføjer teksten til article
-newArticle.appendChild(text2);
+  //Tilføjer text indholdet til text tagget (appendChild, gør at man tilføjer et barn til det man skriver før).
+  text2.appendChild(text2indhold);
+
+  //tilføjer teksten til article
+  newArticle.appendChild(text2);
+}

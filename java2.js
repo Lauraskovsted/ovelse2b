@@ -41,3 +41,12 @@ function start() {
   //tilføjer teksten til article
   newArticle.appendChild(text2);
 }
+
+const f1 = document.querySelector("#foto1");
+f1.addEventListener("click", billedeSkift);
+
+// const tilfaeldigtTal = Math.floor(Math.random() * 11);
+
+function billedeSkift() {
+  foto1.src = "https://placeimg.com/400/300/arch?t=";
+}

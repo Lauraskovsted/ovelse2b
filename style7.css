@@ -34,15 +34,8 @@ footer {
   border-top: 1px solid black;
 }
 
-/* Øvelse 2A */
-/* header:nth-child(1) {
-  color: red;
+.shadow {
+  box-shadow: -2px -3px 164px 22px rgba(39, 35, 169, 0.91);
+  -webkit-box-shadow: -2px -3px 164px 22px rgba(39, 35, 169, 0.91);
+  -moz-box-shadow: -2px -3px 164px 22px rgba(169, 35, 51, 0.91);
 }
-
-article:nth-child(1) {
-  color: red;
-}
-
-article:first-of-type + article {
-  color: blue;
-} */

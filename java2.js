@@ -50,3 +50,12 @@ f1.addEventListener("click", billedeSkift);
 function billedeSkift() {
   foto1.src = "https://placeimg.com/400/300/arch?t=";
 }
+
+const artikel = document.querySelector("article");
+
+artikel.addEventListener("mouseover", toggleShadow);
+artikel.addEventListener("mouseout", toggleShadow);
+
+function toggleShadow() {
+  artikel.classList.toggle("shadow");
+}

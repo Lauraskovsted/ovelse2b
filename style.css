@@ -1,0 +1,48 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  margin-left: 8px;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+article {
+  border: solid black 1px;
+  margin-inline: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+/* Øvelse 2A */
+/* header:nth-child(1) {
+  color: red;
+}
+
+article:nth-child(1) {
+  color: red;
+}
+
+article:first-of-type + article {
+  color: blue;
+} */

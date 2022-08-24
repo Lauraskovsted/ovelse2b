@@ -11,6 +11,12 @@ const tekst = document.querySelector("p");
 tekst.textContent = "tekst til artikler";
 console.log(tekst);
 
+//Ændring af billede
+const pic1 = document.querySelector("article:nth-child(1) img");
+console.log(pic1);
+pic1.src = "golf.png";
+pic1.alt = "en person spiller golf";
+
 // const underoverskrift = document.querySelector("h2");
 // console.log(underoverskrift);
 // const foto = document.querySelector("img");
